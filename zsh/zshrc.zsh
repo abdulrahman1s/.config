@@ -9,6 +9,10 @@ HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=50000
 
+# Make ZSH Case insensitive
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 man() {
     env LESS_TERMCAP_mb=$'\E[01;31m' \
     LESS_TERMCAP_md=$'\E[38;5;113m' \
