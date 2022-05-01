@@ -15,7 +15,7 @@ install_packages() {
 install_fonts() {
     echo "Installing Fonts..."
 
-    if [ -f ~/.fonts/ComicMono.tff ]; then
+    if [ -f ~/.fonts/Fira-Code-Regular-Nerd-Font.tff ]; then
         echo "Font already exists.."
         return
     else
