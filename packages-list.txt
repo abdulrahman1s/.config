@@ -1,0 +1,9 @@
+git
+zsh
+bat
+exa
+neovim
+neofetch
+htop
+httpie
+redshift
