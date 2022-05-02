@@ -9,9 +9,7 @@ HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=50000
 
-# Make ZSH Case insensitive
 autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 man() {
     env LESS_TERMCAP_mb=$'\E[01;31m' \
@@ -24,12 +22,14 @@ man() {
     man "$@"
 }
 
+PATH=$PATH:~/.local/bin/
+eval "$(zoxide init zsh)"
 
 source "$HOME/.config/zsh/p10k.zsh"
 source "$HOME/.config/zsh/zinit.zsh"
 source "$HOME/.config/zsh/plugins.zsh"
 source "$HOME/.config/zsh/aliases.zsh"
 
-
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
+# zsh-autocomplete configuration
+zstyle ':autocomplete:*' recent-dirs zoxide
+zstyle ':autocomplete:*' min-input 3

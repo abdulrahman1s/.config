@@ -25,6 +25,14 @@ install_fonts() {
     fi
 }
 
+install_other_packages() {
+    echo "Installing Other Packages..."
+
+    echo "1. Installing Zoxied (Smarter cd command)"
+    wget -qO- https://github.com/ajeetdsouza/zoxide/releases/download/v0.8.1/zoxide-v0.8.1-x86_64-unknown-linux-musl.tar.gz | tar xvz -C /tmp
+    mv /tmp/zoxide /home/abdulrahman/.local/bin/
+}
+
 initialize_zsh() {
     chsh -s $(which zsh)
     ln -sf ~/.config/zsh/zshrc.zsh ~/.zshrc
@@ -32,6 +40,7 @@ initialize_zsh() {
 
 add_third_party_ppa
 install_packages "${PACKAGES[@]}"
+install_other_packages
 install_fonts
 
 echo "Copying config files to ~/.config..."

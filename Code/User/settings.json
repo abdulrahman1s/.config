@@ -1,31 +1,31 @@
 {
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-  "editor.fontFamily": "FiraCode Nerd Font",
-  "terminal.integrated.fontSize": 16,
-  "workbench.iconTheme": "vscode-icons",
-  "editor.minimap.enabled": false,
-  "git.autofetch": true,
-  "editor.suggest.preview": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.fontLigatures": true,
-  "emojisense.languages": {
-    "markdown": true,
-    "plaintext": false,
-    "json": true,
-    "scminput": true,
-    "javascript": true
-  },
-  "files.autoSave": "afterDelay",
-  "[rust]": {
-    "editor.defaultFormatter": "matklad.rust-analyzer"
-  },
-  "workbench.startupEditor": "none",
-  "git.confirmSync": false,
-  "editor.inlineSuggest.enabled": true,
-  "workbench.colorTheme": "Bearded Theme Anthracite",
-  "vsicons.dontShowNewVersionMessage": true,
-  "telemetry.telemetryLevel": "off",
-  "cSpell.userWords": [
-    "bitfield"
-  ]
-}
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "terminal.integrated.fontSize": 16,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
+    "git.autofetch": true,
+    "editor.suggest.preview": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.fontLigatures": true,
+    "emojisense.languages": {
+      "markdown": true,
+      "plaintext": false,
+      "json": true,
+      "scminput": true,
+      "javascript": true
+    },
+    "files.autoSave": "afterDelay",
+    "[rust]": {
+      "editor.defaultFormatter": "matklad.rust-analyzer"
+    },
+    "workbench.startupEditor": "none",
+    "git.confirmSync": false,
+    "editor.inlineSuggest.enabled": true,
+    "workbench.colorTheme": "Bearded Theme Anthracite",
+    "vsicons.dontShowNewVersionMessage": true,
+    "telemetry.telemetryLevel": "off",
+    "cSpell.userWords": [
+      "bitfield"
+    ]
+  }
