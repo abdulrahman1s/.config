@@ -2,6 +2,7 @@ CONFIG_FILES=(
     zsh
     "Code/User/settings.json"
     "autostart/redshift-gtk.desktop"
+    ranger
 )
 
 for name in "${CONFIG_FILES[@]}"; do
