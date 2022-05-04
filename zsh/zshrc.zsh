@@ -43,3 +43,5 @@ n() {
     fi
     rm -f -- "$temp_file"
 }
+
+eval "$(atuin init zsh)"

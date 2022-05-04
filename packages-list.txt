@@ -5,7 +5,6 @@ exa
 neovim
 neofetch
 htop
-httpie
 redshift
 mpv
 ranger

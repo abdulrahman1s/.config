@@ -28,9 +28,15 @@ install_fonts() {
 install_other_packages() {
     echo "Installing Other Packages..."
 
-    echo "1. Installing Zoxied (Smarter cd command)"
+    echo "1. Installing Zoxied... (Smarter cd command)"
     wget -qO- https://github.com/ajeetdsouza/zoxide/releases/download/v0.8.1/zoxide-v0.8.1-x86_64-unknown-linux-musl.tar.gz | tar xvz -C /tmp
     mv /tmp/zoxide /home/abdulrahman/.local/bin/
+
+    echo "2. Installing XH..."
+    curl -sfL https://raw.githubusercontent.com/ducaale/xh/master/install.sh | sh
+
+    echo "3. Installing Atuin (Smarter history command)"
+    bash <(curl https://raw.githubusercontent.com/ellie/atuin/main/install.sh)
 }
 
 initialize_zsh() {
