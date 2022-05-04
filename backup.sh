@@ -4,6 +4,7 @@ CONFIG_FILES=(
     "autostart/redshift-gtk.desktop"
     ranger
     nvim
+    ncspot
 )
 
 for name in "${CONFIG_FILES[@]}"; do 
