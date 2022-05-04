@@ -17,7 +17,6 @@ install_fonts() {
 
     if [ -f ~/.fonts/Fira-Code-Regular-Nerd-Font.tff ]; then
         echo "Font already exists.."
-        return
     else
         mkdir -p ~/.fonts
         curl https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.ttf -o ~/.fonts/Fira-Code-Regular-Nerd-Font.tff
@@ -28,15 +27,19 @@ install_fonts() {
 install_other_packages() {
     echo "Installing Other Packages..."
 
-    echo "1. Installing Zoxied... (Smarter cd command)"
+    echo "Installing Zoxied... (Smarter cd command)"
     wget -qO- https://github.com/ajeetdsouza/zoxide/releases/download/v0.8.1/zoxide-v0.8.1-x86_64-unknown-linux-musl.tar.gz | tar xvz -C /tmp
-    mv /tmp/zoxide /home/abdulrahman/.local/bin/
+    mv /tmp/zoxide ~/.local/bin/
 
-    echo "2. Installing XH..."
+    echo "Installing XH..."
     curl -sfL https://raw.githubusercontent.com/ducaale/xh/master/install.sh | sh
 
-    echo "3. Installing Atuin (Smarter history command)"
+    echo "Installing Atuin... (Smarter history command)"
     bash <(curl https://raw.githubusercontent.com/ellie/atuin/main/install.sh)
+
+    echo "Installing ncspot... (Spotify Client)"
+    wget -qO- https://github.com/hrkfdn/ncspot/releases/download/v0.9.8/ncspot-v0.9.8-linux-x86_64.tar.gz | tar xvz -C /tmp
+    mv /tmp/ncspot ~/.local/bin/
 }
 
 initialize_zsh() {
