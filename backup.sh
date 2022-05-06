@@ -1,3 +1,5 @@
+#!/bin/bash
+
 CONFIG_FILES=(
     zsh
     "Code/User/settings.json"

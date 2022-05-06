@@ -9,3 +9,6 @@ alias py="python3"
 alias tree="exa --tree --icons"
 alias cd="z"
 alias http="xh --follow"
+alias music="ncspot"
+alias weather="curl wttr.in/Egypt+Giza"
+function docs() { curl cheat.sh/$@ }
