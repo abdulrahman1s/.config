@@ -1,5 +1,7 @@
-alias "~=cd ~"
-alias "..=cd .."
+alias :q=exit
+alias ~="cd ~"
+alias ..="cd .."
+alias ....="cd ../.."
 alias c="clear"
 alias cls="clear"
 alias cat="batcat"
@@ -11,4 +13,6 @@ alias cd="z"
 alias http="xh --follow"
 alias music="ncspot"
 alias weather="curl wttr.in/Egypt+Giza"
+alias vim="nvim"
+alias v="nvim"
 function docs() { curl cheat.sh/$@ }

@@ -1,8 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Basic ZSH Built-in configuration
 autoload -Uz compinit && compinit
 setopt autocd
@@ -12,7 +7,7 @@ SAVEHIST=50000
 
 
 eval "$(zoxide init zsh)"
-source ~/.config/zsh/p10k.zsh
+eval $(thefuck --alias)
 source ~/.config/zsh/zinit.zsh
 source ~/.config/zsh/plugins.zsh
 source ~/.config/zsh/aliases.zsh

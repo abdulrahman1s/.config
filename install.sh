@@ -40,6 +40,9 @@ install_other_packages() {
     echo "Installing ncspot... (Spotify Client)"
     wget -qO- https://github.com/hrkfdn/ncspot/releases/download/v0.9.8/ncspot-v0.9.8-linux-x86_64.tar.gz | tar xvz -C /tmp
     mv /tmp/ncspot ~/.local/bin/
+
+    echo "Installing thefuck..."
+    pip3 install thefuck --user
 }
 
 initialize_zsh() {
