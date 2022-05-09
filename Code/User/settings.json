@@ -26,6 +26,7 @@
     "vsicons.dontShowNewVersionMessage": true,
     "telemetry.telemetryLevel": "off",
     "cSpell.userWords": [
-      "bitfield"
+      "bitfield",
+      "middlewares"
     ]
   }

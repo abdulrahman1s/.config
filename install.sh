@@ -43,6 +43,9 @@ install_other_packages() {
 
     echo "Installing thefuck..."
     pip3 install thefuck --user
+
+    echo "Installing tldr (replacment for man command)"
+    pip3 install tldr --user
 }
 
 initialize_zsh() {

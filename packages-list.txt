@@ -8,3 +8,4 @@ htop
 redshift
 mpv
 ranger
+fd-find

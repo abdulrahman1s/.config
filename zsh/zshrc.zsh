@@ -7,7 +7,7 @@ SAVEHIST=50000
 
 
 eval "$(zoxide init zsh)"
-eval $(thefuck --alias)
+eval "$(thefuck --alias)"
 source ~/.config/zsh/zinit.zsh
 source ~/.config/zsh/plugins.zsh
 source ~/.config/zsh/aliases.zsh
@@ -27,14 +27,5 @@ n() {
     rm -f -- "$temp_file"
 }
 
-# Colorize man output
-man() {
-    env LESS_TERMCAP_mb=$'\E[01;31m' \
-    LESS_TERMCAP_md=$'\E[38;5;113m' \
-    LESS_TERMCAP_me=$'\E[0m' \
-    LESS_TERMCAP_se=$'\E[0m' \
-    LESS_TERMCAP_so=$'\E[38;5;167;1m' \
-    LESS_TERMCAP_ue=$'\E[0m' \
-    LESS_TERMCAP_us=$'\E[04;38;5;146m' \
-    man $@
-}
+export PNPM_HOME="/home/abdulrahman/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
