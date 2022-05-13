@@ -13,9 +13,11 @@ alias cd="z"
 alias find="fdfind"
 alias http="xh --follow"
 alias music="ncspot"
+alias spotify="ncspot"
 alias weather="curl wttr.in/Egypt+Giza"
 alias vim="nvim"
 alias v="nvim"
 alias npm="pnpm"
 alias man="tldr"
+alias \$=''
 function docs() { curl cheat.sh/$@ }

@@ -28,5 +28,9 @@
     "cSpell.userWords": [
       "bitfield",
       "middlewares"
-    ]
+    ],
+    "[typescript]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "window.zoomLevel": 1
   }
